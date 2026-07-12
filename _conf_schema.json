@@ -1,0 +1,9 @@
+{
+  "cid_list": {
+    "description": "CID List",
+    "type": "list",
+    "items": {"type": "string"},
+    "default": [],
+    "hint": "在此填入需要合并为一组的 Conversation ID。"
+  }
+}
