@@ -4,12 +4,12 @@ from astrbot.api import AstrBotConfig
 
 
 class MyPlugin(Star):
+    context: Context
     cids: list[str]
     last_active: str | None
 
     def __init__(self, context: Context, config: AstrBotConfig):
-        super().__init__(context)
-
+        self.context = context
         self.cids = config['cid_list']
 
     async def initialize(self):
